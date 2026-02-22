@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal under maintenance :: Universal Bearings</title>
-  <meta name="description" content="The Micronet online ecom portal is under maintenance. Please call us directly to place an order.">
+  <meta name="description" content="The Micronet online ecom portal is under maintenance. Please call or email us to place an order.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -15,86 +15,194 @@
     }
     body {
       font-family: 'Montserrat', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+      padding-bottom: 3rem;
     }
-    .maintenance-card {
-      max-width: 560px;
-      text-align: center;
-      padding: 2rem;
+    .site-header {
+      border-bottom: 3px solid var(--ubc-primary);
     }
     .logo-text-main {
       font-family: 'Oswald', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       font-weight: 700;
       color: var(--ubc-primary);
       letter-spacing: 0.05em;
     }
     .logo-text-sub {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #555;
       letter-spacing: 0.02em;
+    }
+    .maintenance-banner {
+      background: #fff;
+      border: 2px solid var(--ubc-accent);
+      border-radius: 8px;
+      padding: 200px 1.5rem;
+      margin: 2rem 0;
     }
     .maintenance-title {
       font-family: 'Oswald', sans-serif;
       color: var(--ubc-primary);
       font-size: 1.75rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
     .maintenance-message {
       font-size: 1.1rem;
       color: #333;
-      margin-bottom: 1.5rem;
+      margin: 0;
     }
-    .contact-box {
-      background: #fff;
-      border: 2px solid var(--ubc-accent);
-      border-radius: 8px;
-      padding: 1.25rem;
-      margin-top: 1rem;
+    .card.border-danger .card-header {
+      background: var(--ubc-accent);
+      color: #fff;
     }
-    .contact-box h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.25rem;
-      color: var(--ubc-primary);
-      margin-bottom: 0.75rem;
-    }
-    .contact-box a {
+    .card.border-danger a {
       color: var(--ubc-accent);
       font-weight: 600;
     }
-    .contact-box a:hover {
+    .card.border-danger a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <div class="maintenance-card">
-    <a href="/" class="d-inline-block text-decoration-none mb-3">
-      <img src="img/uni-logo.jpg" alt="Universal Bearing Company" width="100" height="95" class="d-block mx-auto">
-      <div class="logo-text-main mt-2">UNIVERSAL BEARING COMPANY</div>
-      <div class="logo-text-sub">BEARINGS, POWER TRANSMISSION &amp; MORE</div>
-    </a>
-
-    <h1 class="maintenance-title">Portal under maintenance</h1>
-    <p class="maintenance-message">
-      The Micronet online ecom portal is under maintenance. Please call us directly to place an order.
-    </p>
-
-    <div class="contact-box">
-      <h2>Call your nearest branch</h2>
-      <p class="mb-1"><strong>NSW:</strong> (02) 9756 2228</p>
-      <p class="mb-1"><strong>Victoria:</strong> (03) 9792 9099</p>
-      <p class="mb-1"><strong>Queensland:</strong> (07) 3277 1444</p>
-      <p class="mb-0"><strong>WA:</strong> 08 6100 1300</p>
+  <header class="site-header py-3 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="img/uni-logo.jpg" alt="Universal Bearing Company" width="80" height="76">
+            <div class="ms-3">
+              <div class="logo-text-main">UNIVERSAL BEARING COMPANY</div>
+              <div class="logo-text-sub">BEARINGS, POWER TRANSMISSION &amp; MORE</div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <main class="container py-4">
+    <div class="maintenance-banner text-center">
+      <h1 class="maintenance-title">Portal under maintenance</h1>
+      <p class="maintenance-message">
+        The Micronet online ecom portal is under maintenance. Sorry for the inconvenience.<br>Please call or email Universal Bearings to place an order.
+      </p>
+    </div>
+
+    <!-- Branch Addresses -->
+    <div class="row mt-2">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 border-danger">
+          <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">New South Wales</h5>
+          </div>
+          <div class="card-body">
+            <p class="mb-1">
+              7 Toohey Road, Wetherill Park, NSW 2164, AUSTRALIA<br>
+              <strong>Email:</strong> <a href="mailto:sales@universalbearings.com.au">sales@universalbearings.com.au</a><br>
+              <strong>Tel:</strong> (02) 9756 2228<br>
+              <strong>Fax:</strong> (02) 9756 2221<br>
+              <strong>After Hours:</strong> 0414 968 368
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 border-danger">
+          <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">Victoria</h5>
+          </div>
+          <div class="card-body">
+            <p class="mb-1">
+              51-53 Progress St, South Dandenong, VIC 3175, AUSTRALIA<br>
+              <strong>Email:</strong> <a href="mailto:vicsales@universalbearings.com.au">vicsales@universalbearings.com.au</a><br>
+              <strong>Tel:</strong> (03) 9792 9099<br>
+              <strong>After Hours:</strong> 0413 096 193
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 border-danger">
+          <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">Queensland</h5>
+          </div>
+          <div class="card-body">
+            <p class="mb-1">
+              Cnr Ashover &amp; Ipswich Rd, Rocklea, QLD 4108, AUSTRALIA<br>
+              <strong>Email:</strong> <a href="mailto:qldsales@universalbearings.com.au">qldsales@universalbearings.com.au</a><br>
+              <strong>Tel:</strong> (07) 3277 1444<br>
+              <strong>After Hours:</strong> 0481 961 152
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 border-danger">
+          <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">Western Australia</h5>
+          </div>
+          <div class="card-body">
+            <p class="mb-1">
+              1/97 Kew Street, Welshpool WA 6106, AUSTRALIA<br>
+              <strong>Email:</strong> <a href="mailto:wasales@universalbearings.com.au">wasales@universalbearings.com.au</a><br>
+              <strong>Tel:</strong> 08 6100 1300<br>
+              <strong>After Hours:</strong> 0423 648 321
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Locations -->
+    <h2 class="mt-5">Our Locations</h2>
+
+    <div class="row mt-4">
+      <div class="col-md-6 mb-4">
+        <h5>New South Wales – Wetherill Park</h5>
+        <div class="ratio ratio-4x3">
+          <iframe
+            src="https://maps.google.co.uk/maps?source=embed&amp;hl=en-GB&amp;q=7+Toohey+Road+Wetherill+Park&amp;ie=UTF8&amp;t=m&amp;ll=-33.840194,150.875072&amp;spn=0.023526,0.066004&amp;z=14&amp;iwloc=A&amp;output=embed"
+            loading="lazy" allowfullscreen title="Map: NSW Wetherill Park">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h5>Victoria – South Dandenong</h5>
+        <div class="ratio ratio-4x3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.677479897564!2d145.23344487656922!3d-38.00798264516407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6115aa049d3e3%3A0xbe59fc8050673b2e!2s51-53%20Progress%20St%2C%20Dandenong%20South%20VIC%203175!5e0!3m2!1sen!2sau!4v1719222690729!5m2!1sen!2sau"
+            loading="lazy" allowfullscreen title="Map: Victoria South Dandenong">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h5>Queensland – Rocklea</h5>
+        <div class="ratio ratio-4x3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3537.184046529316!2d153.0079576!3d-27.556797999999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b914ffa104546c1%3A0x1302a35acdb95271!2sRocklea+QLD+4106%2C+Australia!5e0!3m2!1sen!2suk!4v1415417476178"
+            loading="lazy" allowfullscreen title="Map: Queensland Rocklea">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h5>Western Australia – Welshpool</h5>
+        <div class="ratio ratio-4x3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.0813277713282!2d115.9279662757832!3d-31.98581072400966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bd0068773d53%3A0x414a02ea93bbd761!2sUniversal%20Bearing%20Company!5e0!3m2!1sen!2sau!4v1710327749265!5m2!1sen!2sau"
+            loading="lazy" allowfullscreen title="Map: WA Welshpool">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
